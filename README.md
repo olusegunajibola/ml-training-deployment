@@ -24,6 +24,7 @@ This project includes:
 You can convert the Pipfile and Pipfile.lock in the project directory into a requirements.txt.
 
 ```pipenv lock -r > requirements.txt```
+
 After that, you can install all your modules in your Python virtual environment by doing the following:
 
 ```pip install -r requirements.txt```
