@@ -20,4 +20,10 @@ This project includes:
 - Predicting survival for new passenger entries.
 - Deployment using Docker
 
+## Docker
 
+To deploy and run model with Docker:
+```
+>>> docker build -t predictordock_survival .
+>>> docker run -it --rm -p 9696:9696 predictordock_survival
+```
