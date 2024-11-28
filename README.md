@@ -20,9 +20,18 @@ This project includes:
 - Predicting survival for new passenger entries.
 - Deployment using Docker
 
-## Docker
+## Dependencies
+You can convert the Pipfile and Pipfile.lock in the project directory into a requirements.txt.
 
-To deploy and run model with Docker:
+```pipenv lock -r > requirements.txt```
+After that, you can install all your modules in your Python virtual environment by doing the following:
+
+```pip install -r requirements.txt```
+
+Doing the above enables you to run the Jupyter notebook `notebook.ipynb`.
+
+## Docker
+To deploy and run the model with Docker:
 ```
 >>> docker build -t predictordock_survival .
 >>> docker run -it --rm -p 9696:9696 predictordock_survival
